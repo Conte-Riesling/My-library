@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Title: {{ book.title }}</h1>
+
+  <p><strong>Author:</strong> <a href="{{ book.author.get_absolute_url }}">{{ book.author }}</a></p>
+  <p><strong>Summary:</strong> {{ book.summary }}</p>
+  <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+  <p><strong>Genre:</strong> {{ book.genre }}</p>
+  <p><strong>Status:</strong> {% if book.availability %}book availability{% else %}not availability{% endif %}</p>
+
+  <div style="margin-left:20px;margin-top:20px">
+
+  </div>
+{% endblock %}

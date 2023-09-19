@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>My Library Home</h1>
+
+  <p>Welcome to My Library </p>
+
+<h2>Paulo Coelho: Read and you will fly</h2>
+
+
+  <p>Please choose what you are interested in:</p>
+  <ul>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Copies:</strong> {{ num_requests }}</li>
+    <li><strong>Copies available:</strong> {{ num_requests_available }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul>
+
+{% endblock %}
